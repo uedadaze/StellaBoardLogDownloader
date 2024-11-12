@@ -1,0 +1,2 @@
+# StellaBoardLogDownloader
+Webゲーム「StellaBoard」のログを保存するためのTampermonkeyスクリプト
