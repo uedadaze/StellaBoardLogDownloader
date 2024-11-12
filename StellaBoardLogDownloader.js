@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Stella Board Log Downloader
-// @namespace    https://soraniwa.428.st/
+// @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  「Stella board」のログをダウンロードします。発言をクリックして任意のリストを作成しそれをダウンロードできます。
 // @author       Kirikabu
