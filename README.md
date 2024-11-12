@@ -12,7 +12,7 @@ Webゲーム「Stella Board」のログを保存するためのTampermonkeyス�
 
 ## 導入方法
 1. Tampermonkey/Greasemonkeyをまだインストールしていない場合は、インストールしてください。
-2. 本ページの上の方にあるファイル一覧から「StellaBoardLogDownloader.js」を開いて下さい。
+2. [こちら](https://github.com/uedadaze/StellaBoardLogDownloader/blob/main/StellaBoardLogDownloader.js)を開いて下さい。
 3. 右上の方にある「raw」ボタンを押して下さい。自動的にTampermonkey/Greasemonkeyのスクリプトインストール画面に移行します。「インストール」ボタンを押せばインストール完了です。
 4. スクリプトをOFFにしたい場合はTampermonkey/Greasemonkeyの「インストール済み UserScript」タブから行って下さい。
 
