@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Stella Board Log Downloader
-// @namespace    http://tampermonkey.net/
-// @version      1.0
+// @namespace    https://soraniwa.428.st/
+// @version      1.01
 // @description  「Stella board」のログをダウンロードします。発言をクリックして任意のリストを作成しそれをダウンロードできます。
 // @author       Kirikabu
 // @match        https://soraniwa.428.st/*
@@ -103,6 +103,9 @@
         // 使用量を更新
         document.getElementById('storageUsage').textContent = getLocalStorageUsage() + ' KB';
         document.getElementById('currentListUsage').textContent = getCurrentListUsage() + ' KB';
+
+        // 最下部までスクロールする
+        bottomContainer.scrollTop = bottomContainer.scrollHeight;
     }
     // リストをローカルストレージに保存する
     function saveList() {
@@ -166,7 +169,7 @@
             moveAt(e.pageX, e.pageY);
             // 挿入位置の計算
             var rect = bottomContainer.getBoundingClientRect();
-            var offsetY = e.clientY - rect.top;
+            var offsetY = e.clientY - rect.top + bottomContainer.scrollTop;
             var children = Array.from(bottomContainer.children);
             var insertBeforeElement = children.find(function(child) {
                 return offsetY < child.offsetTop + child.offsetHeight / 2;
